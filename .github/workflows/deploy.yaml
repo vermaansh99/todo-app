@@ -39,7 +39,7 @@ jobs:
 
       - name: Update Kubernetes config
         run: |
-          aws eks --region ap-south-1 update-kubeconfig --name node-cluster
+          aws eks --region ap-south-1 update-kubeconfig --name python-cluster
       - name: Deploy to EKS
         run: |
           kubectl apply -f k8s/deployment.yaml
